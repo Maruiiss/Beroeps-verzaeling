@@ -1,43 +1,44 @@
-/* Algemene opmaak */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: "Arial", sans-serif;
+    background-color: #331c09;
     margin: 0;
     padding: 0;
+    color: #fff;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #e1c699;
     padding: 1rem;
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    
 }
 
 nav li {
     display: inline;
     margin-right: 20px;
+    
 }
 
 main {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #e1c699;
     text-align: center;
-    padding: 1rem;
+
 }
 
-/* Stijlen voor verzamelitemlijst */
+
 #item-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -45,11 +46,10 @@ footer {
 }
 
 .item-card {
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
-
 
 #bestelformulier {
     max-width: 400px;
@@ -59,6 +59,7 @@ footer {
 #bestelformulier label {
     display: block;
     margin-bottom: 10px;
+    color: #fff;
 }
 
 #bestelformulier input[type="text"],
@@ -66,12 +67,36 @@ footer {
     width: 100%;
     padding: 5px;
     margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
 }
 
 #bestelformulier button {
-    background-color: #333;
+    background-color: #331c09;
     color: #fff;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#bestelformulier button:hover {
+    background-color: #e1c699;
+}
+
+.btext {
+    color: rgb(229, 136, 151);
+}
+
+
+#startpagina,
+#verzameling,
+#bestellingen {
+    color: rgb(100, 164, 243);
+}
+
+
+#title {
+    text-align: center;
 }
